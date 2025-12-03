@@ -1,0 +1,116 @@
+{
+  "metadata": {
+    "timestamp": "1764762979",
+    "desired_validators": 20,
+    "round": 632,
+    "block_number": 13253371,
+    "solution_score": {
+      "minimal_stake": 120000000000000000,
+      "sum_stake": 2493306858281618861,
+      "sum_stake_squared": 310950839329669057248417833826407183
+    },
+    "data_source": "staking"
+  },
+  "results": [
+    {
+      "account": "5ENXqYmc5m6VLMm5i1mun832xAv2Qm9t3M4PWAFvvyCJLNoR",
+      "total_stake": "126369.180182313291 WND",
+      "self_stake": "74400.733656256285 WND"
+    },
+    {
+      "account": "5CFPqoTU7fiUp1JJNbfcY2z6yavEBKDPQGg4SGeG3Fm7vCsg",
+      "total_stake": "126082.417385220802 WND",
+      "self_stake": "38550.321010081772 WND"
+    },
+    {
+      "account": "5FEjMPSs4X2XNes7QRH6eLmaYCskHdnYM8Zv2kKrBrhnzGbR",
+      "total_stake": "126081.08533012089 WND",
+      "self_stake": "38355.479923339797 WND"
+    },
+    {
+      "account": "5E2CYS4D6KdD1nDh5d7hTtss3TR8etx4i92ozipJt5QtR9KY",
+      "total_stake": "126076.751091280619 WND",
+      "self_stake": "61183.499408550417 WND"
+    },
+    {
+      "account": "5GTD7ZeD823BjpmZBCSzBQp7cvHR1Gunq7oDkurZr9zUev2n",
+      "total_stake": "126068.956157577481 WND",
+      "self_stake": "22891.535353583392 WND"
+    },
+    {
+      "account": "5DJcEbkNxsnNwHGrseg7cgbfUG8eiKzpuZqgSph5HqHrjgf6",
+      "total_stake": "126063.637399398446 WND",
+      "self_stake": "60852.002089062241 WND"
+    },
+    {
+      "account": "5Ek5JCnrRsyUGYNRaEvkufG1i1EUxEE9cytuWBBjA9oNZVsf",
+      "total_stake": "126063.000636539862 WND",
+      "self_stake": "19777.54473486345 WND"
+    },
+    {
+      "account": "5G1ojzh47Yt8KoYhuAjXpHcazvsoCXe3G8LZchKDvumozJJJ",
+      "total_stake": "126062.791891279195 WND",
+      "self_stake": "44027.529868250721 WND"
+    },
+    {
+      "account": "5GYaYNVq6e855t5hVCyk4Wuqssaf6ADTrvdPZ3QXyHvFXTip",
+      "total_stake": "126059.140910790507 WND",
+      "self_stake": "39310.432498308358 WND"
+    },
+    {
+      "account": "5Ft3J6iqSQPWX2S9jERXcMpevt8JDUPWjec5uGierfVGXisE",
+      "total_stake": "126056.746070335997 WND",
+      "self_stake": "40824.859920499251 WND"
+    },
+    {
+      "account": "5FZoQhgUCmqBxnkHX7jCqThScS2xQWiwiF61msg63CFL3Y8f",
+      "total_stake": "126056.581275290595 WND",
+      "self_stake": "28630.23473348241 WND"
+    },
+    {
+      "account": "5HYYWyhyUQ7Ae11f8fCid58bhJ7ikLHM9bU8A6Ynwoc3dStR",
+      "total_stake": "126054.400708421666 WND",
+      "self_stake": "36697.621057152703 WND"
+    },
+    {
+      "account": "5CFPcUJgYgWryPaV1aYjSbTpbTLu42V32Ytw1L9rfoMAsfGh",
+      "total_stake": "126053.993243099643 WND",
+      "self_stake": "27722.48521320911 WND"
+    },
+    {
+      "account": "5CcHdjf6sPcEkTmXFzF2CfH7MFrVHyY5PZtSm1eZsxgsj1KC",
+      "total_stake": "126050.714359188539 WND",
+      "self_stake": "61603.206698312806 WND"
+    },
+    {
+      "account": "5FUJHYEzKpVJfNbtXmR9HFqmcSEz6ak7ZUhBECz7GpsFkSYR",
+      "total_stake": "126050.355385409683 WND",
+      "self_stake": "40958.809089664603 WND"
+    },
+    {
+      "account": "5H9ayWwwQoPFwFe7hcHussuro75SmRcQHacg9HEYb21oasMn",
+      "total_stake": "121000 WND",
+      "self_stake": "121000 WND"
+    },
+    {
+      "account": "5FNL7mJsaxfPeRku7eY93uMBw7xkaAbBX7c6ZNBdwGmReDQC",
+      "total_stake": "120999.999 WND",
+      "self_stake": "120999.999 WND"
+    },
+    {
+      "account": "5FnxSkypLBNFxc1XcjgvL6rHKCguMu4vTSee9Z5rJ5WVqdTX",
+      "total_stake": "120056.111364992757 WND",
+      "self_stake": "120046.002376124481 WND"
+    },
+    {
+      "account": "5F6UJyEWSdTcchyZpKTi7g5EiVWzwjVcnwcZjv1mmN3AXN2T",
+      "total_stake": "120000.995890358888 WND",
+      "self_stake": "120000.995890358888 WND"
+    },
+    {
+      "account": "5FWG1xiaSSxR4kCTFo3nVGdz3T2fkajUfEtj4qEFHwnq4iVx",
+      "total_stake": "120000 WND",
+      "self_stake": "120000 WND"
+    }
+  ]
+}

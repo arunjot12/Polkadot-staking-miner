@@ -386,6 +386,18 @@ where
 			}
 		}
 
+		// Filter out nominators with no meaningful data:
+		// - No active validators (no stake allocated to winners)
+		// - No inactive validators (no winners they nominated but didn't get stake)
+		// - Only waiting validators that are themselves (pure self-nominators who aren't validators)
+		let has_meaningful_data = !active_supported.is_empty() ||
+			!inactive.is_empty() ||
+			(waiting.len() > 1 || (waiting.len() == 1 && waiting[0] != nominator_encoded));
+
+		if !has_meaningful_data {
+			continue;
+		}
+
 		nominator_predictions.push(NominatorPrediction {
 			address: nominator_encoded,
 			stake: planck_to_token_u64(stake, ctx.token_decimals, ctx.token_symbol),
@@ -418,15 +430,15 @@ where
 	// try to fetch election data from the snapshot
 	// if snapshot is not available fetch from staking
 	log::info!(target: LOG_TARGET, "Trying to fetch data from snapshot");
-	match try_fetch_snapshot::<T>(n_pages, round, &storage).await {
-		Ok((target_snapshot, voter_pages)) => {
-			log::info!(target: LOG_TARGET, "Snapshot found");
-			// Convert BoundedVec to Vec so callers get all pages
-			let voter_pages_vec: Vec<VoterSnapshotPageOf<T>> = voter_pages.into_iter().collect();
-			Ok((target_snapshot, voter_pages_vec, ElectionDataSource::Snapshot))
-		},
-		Err(err) => {
-			log::warn!(target: LOG_TARGET, "Fetching from Snapshot failed: {err}. Falling back to staking pallet");
+	// match try_fetch_snapshot::<T>(n_pages, round, &storage).await {
+	// 	Ok((target_snapshot, voter_pages)) => {
+	// 		log::info!(target: LOG_TARGET, "Snapshot found");
+	// 		// Convert BoundedVec to Vec so callers get all pages
+	// 		let voter_pages_vec: Vec<VoterSnapshotPageOf<T>> = voter_pages.into_iter().collect();
+	// 		Ok((target_snapshot, voter_pages_vec, ElectionDataSource::Snapshot))
+	// 	},
+	// 	Err(err) => {
+	// 		log::warn!(target: LOG_TARGET, "Fetching from Snapshot failed: {err}. Falling back to staking pallet");
 
 			let candidates = fetch_candidates(client)
 				.await
@@ -447,5 +459,5 @@ where
 
 			Ok((target_snapshot, voter_snapshot, ElectionDataSource::Staking))
 		}
-	}
-}
+// 	}
+// }
