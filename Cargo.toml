@@ -62,7 +62,7 @@ ss58-registry = "1.9"
 anyhow = "1"
 assert_cmd = "2.1"
 regex = "1"
-tempfile = "3.8"
+tempfile = "3.23"
 
 [features]
 integration-tests = []
